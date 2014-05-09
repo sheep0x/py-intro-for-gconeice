@@ -17,3 +17,11 @@ TOC
 
       License: Apache v2
 
+  - datagen.py
+
+      简单的数据生成器
+
+      演示了randint的使用
+
+      License: CC0 or Public domain
+
