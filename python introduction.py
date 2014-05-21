@@ -51,7 +51,7 @@ exit()      # 执行exit()就可以立刻退出
 
 
 # ==================== Cheap cheatsheet ====================
-print 'Hello, yyb!'
+print 'Hello, gconeice!'
 myname = raw_input()            # getline
 print 'Hello, ' + myname
 
@@ -184,8 +184,7 @@ harem[4:-1] # ['Karen']
 
 [i**2 for i in range(0,10)]     # 这叫list comprehension。很方便吧？
                                 # 不过不要滥用哦
-nums = list(range(0,10))        # 简单一点的工作用类型转换就可以了
-                                # 看，比list comprehension清爽多了吧？
+nums = range(0,10)              # 看，比list comprehension清爽多了吧？
 
 harem += nums                   # list中可以同时存储不同类型的对象
 del harem[-1]                   # harem中混进了奇怪的东西...
@@ -283,15 +282,17 @@ harem2 = set(harem)             # To be fair, we use an unordered set,
 
 # TODO The damn help()
 # TODO docstring
-# TODO dir(foo), foo.__doc__
+# TODO dir(foo), foo.__doc__, foo.__class__
 # TODO class
 #           class suite中发生的事情（new context、bind names in the context）
 #           instantiate时发生了什么（创建新对象，类似Ruby的OpenStruct、Lua的
 #                                    table或Javascript的object）
 #           method（foo.bar()相当于MyClass.bar(foo)）
 #                   说白了，Python中的class完全就是语法糖。本质上Python更接近
-#                   prototype-based语言（与Javascript对比一下即可看出）。
+#                   Lua之类的语言。
 #           继承、etc
+#           新旧两种object
+#           class Foo: pass 的用处
 
 def fib(n):
     if n == 1 or n == 2:
